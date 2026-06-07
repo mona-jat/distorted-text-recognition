@@ -31,6 +31,7 @@ text into the correct text. Lower CER = better performance.
 | Correct Predictions | 1999 / 2000 |
 
 ## Model Architecture — CRNN
+```
 Input (64 x 200 x 1)
       CNN (5 blocks — Conv-BN-ReLU)
 Feature Map (1 x 50 x 256)
@@ -39,6 +40,7 @@ Sequence (50 time-steps x 256 features)
       BiLSTM x 2 (128 units each direction)
       Dense + Softmax
 Output (50 x 32)  →  CTC Loss
+```
 
 ## Tech Stack
 
@@ -53,7 +55,7 @@ Output (50 x 32)  →  CTC Loss
 - scikit-learn (train/val split)
 
 ## Project Structure
-
+```
 Text_detection/
 ├── README.md
 ├── distortedpattern_Recognition.ipynb
@@ -67,6 +69,7 @@ Text_detection/
         ├── training_curves.png
         ├── val_predictions.png
         └── training_log.csv
+```
 
 ## Dataset
 
