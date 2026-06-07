@@ -67,3 +67,15 @@ Text_detection/
         ├── training_curves.png
         ├── val_predictions.png
         └── training_log.csv
+
+## Dataset
+
+The dataset is not included in this repository due to size constraints.
+Download it from Google Drive and place it in `data/cig_ps/`:
+
+https://drive.google.com/file/d/1e0Bpbmjp-Pc1Oz7luC1g8JhfzKpGZRHu/view?usp=drive_link
+
+The dataset contains:
+- `train_images/` — 20,000 distorted images
+- `test_images/`  — 5,000 distorted images
+- `train-labels.csv` — image filenames and corresponding text labels
